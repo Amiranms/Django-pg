@@ -1,0 +1,173 @@
+2025-05-18 20:00:49.010 MSK [24566] LOG:  starting PostgreSQL 14.17 (Homebrew) on x86_64-apple-darwin23.6.0, compiled by Apple clang version 16.0.0 (clang-1600.0.26.6), 64-bit
+2025-05-18 20:00:49.013 MSK [24566] LOG:  could not bind IPv4 address "127.0.0.1": Address already in use
+2025-05-18 20:00:49.013 MSK [24566] HINT:  Is another postmaster already running on port 5432? If not, wait a few seconds and retry.
+2025-05-18 20:00:49.013 MSK [24566] LOG:  could not bind IPv6 address "::1": Address already in use
+2025-05-18 20:00:49.013 MSK [24566] HINT:  Is another postmaster already running on port 5432? If not, wait a few seconds and retry.
+2025-05-18 20:00:49.013 MSK [24566] WARNING:  could not create listen socket for "localhost"
+2025-05-18 20:00:49.013 MSK [24566] FATAL:  could not create any TCP/IP sockets
+2025-05-18 20:00:49.014 MSK [24566] LOG:  database system is shut down
+2025-05-18 20:01:59.919 MSK [27335] LOG:  starting PostgreSQL 14.17 (Homebrew) on x86_64-apple-darwin23.6.0, compiled by Apple clang version 16.0.0 (clang-1600.0.26.6), 64-bit
+2025-05-18 20:01:59.922 MSK [27335] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2025-05-18 20:01:59.922 MSK [27335] LOG:  listening on IPv6 address "::1", port 5432
+2025-05-18 20:01:59.922 MSK [27335] FATAL:  could not open lock file "/tmp/.s.PGSQL.5432.lock": Permission denied
+2025-05-18 20:01:59.923 MSK [27335] LOG:  database system is shut down
+2025-05-18 20:02:26.283 MSK [28502] LOG:  starting PostgreSQL 14.17 (Homebrew) on x86_64-apple-darwin23.6.0, compiled by Apple clang version 16.0.0 (clang-1600.0.26.6), 64-bit
+2025-05-18 20:02:26.286 MSK [28502] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2025-05-18 20:02:26.286 MSK [28502] LOG:  listening on IPv6 address "::1", port 5432
+2025-05-18 20:02:26.286 MSK [28502] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5432"
+2025-05-18 20:02:26.793 MSK [28502] LOG:  test message did not get through on socket for statistics collector
+2025-05-18 20:02:26.793 MSK [28502] LOG:  trying another address for the statistics collector
+2025-05-18 20:02:26.793 MSK [28502] LOG:  could not send test message on socket for statistics collector: Undefined error: 0
+2025-05-18 20:02:26.793 MSK [28502] LOG:  disabling statistics collector for lack of working socket
+2025-05-18 20:02:26.793 MSK [28502] WARNING:  autovacuum not started because of misconfiguration
+2025-05-18 20:02:26.793 MSK [28502] HINT:  Enable the "track_counts" option.
+2025-05-18 20:02:26.800 MSK [28506] LOG:  database system was shut down at 2025-05-18 19:59:48 MSK
+2025-05-18 20:02:26.820 MSK [28502] LOG:  database system is ready to accept connections
+2025-05-18 20:02:50.706 MSK [29396] FATAL:  role "smartlib" does not exist
+2025-05-18 20:03:09.133 MSK [30110] FATAL:  role "postgres" does not exist
+2025-05-18 20:03:22.626 MSK [30556] FATAL:  role "postgres" does not exist
+2025-05-18 20:03:45.246 MSK [31492] FATAL:  database "amiran" does not exist
+2025-05-18 20:19:27.350 MSK [64629] ERROR:  relation "smartlib" does not exist at character 15
+2025-05-18 20:19:27.350 MSK [64629] STATEMENT:  SELECT * FROM smartlib 
+	;
+2025-05-18 20:19:33.550 MSK [64629] ERROR:  relation "smartlib_not" does not exist at character 15
+2025-05-18 20:19:33.550 MSK [64629] STATEMENT:  SELECT * FROM smartlib_not;
+2025-05-18 20:40:16.786 MSK [64629] ERROR:  syntax error at or near "q" at character 1
+2025-05-18 20:40:16.786 MSK [64629] STATEMENT:  q
+	q;
+2025-05-18 21:02:43.573 MSK [53313] FATAL:  database "smartpass" does not exist
+2025-05-18 21:02:52.154 MSK [53688] FATAL:  database "smartpass" does not exist
+2025-05-18 21:23:42.832 MSK [96155] ERROR:  column smartlib_book.author does not exist at character 55
+2025-05-18 21:23:42.832 MSK [96155] STATEMENT:  SELECT "smartlib_book"."id", "smartlib_book"."title", "smartlib_book"."author" FROM "smartlib_book"
+2025-05-18 21:23:42.846 MSK [96155] ERROR:  column smartlib_book.author does not exist at character 55
+2025-05-18 21:23:42.846 MSK [96155] STATEMENT:  SELECT "smartlib_book"."id", "smartlib_book"."title", "smartlib_book"."author" FROM "smartlib_book" LIMIT 21
+2025-05-18 21:23:42.846 MSK [96155] ERROR:  column smartlib_book.author does not exist at character 55
+2025-05-18 21:23:42.846 MSK [96155] STATEMENT:  SELECT "smartlib_book"."id", "smartlib_book"."title", "smartlib_book"."author" FROM "smartlib_book" LIMIT 21
+2025-05-18 21:23:42.847 MSK [96155] ERROR:  column smartlib_book.author does not exist at character 55
+2025-05-18 21:23:42.847 MSK [96155] STATEMENT:  SELECT "smartlib_book"."id", "smartlib_book"."title", "smartlib_book"."author" FROM "smartlib_book" LIMIT 21
+2025-05-18 21:23:42.847 MSK [96155] ERROR:  column smartlib_book.author does not exist at character 55
+2025-05-18 21:23:42.847 MSK [96155] STATEMENT:  SELECT "smartlib_book"."id", "smartlib_book"."title", "smartlib_book"."author" FROM "smartlib_book" LIMIT 21
+2025-05-18 21:23:42.848 MSK [96155] ERROR:  column smartlib_book.author does not exist at character 55
+2025-05-18 21:23:42.848 MSK [96155] STATEMENT:  SELECT "smartlib_book"."id", "smartlib_book"."title", "smartlib_book"."author" FROM "smartlib_book" LIMIT 21
+2025-05-18 21:23:42.848 MSK [96155] ERROR:  column smartlib_book.author does not exist at character 55
+2025-05-18 21:23:42.848 MSK [96155] STATEMENT:  SELECT "smartlib_book"."id", "smartlib_book"."title", "smartlib_book"."author" FROM "smartlib_book" LIMIT 21
+2025-05-18 21:23:42.849 MSK [96155] ERROR:  column smartlib_book.author does not exist at character 55
+2025-05-18 21:23:42.849 MSK [96155] STATEMENT:  SELECT "smartlib_book"."id", "smartlib_book"."title", "smartlib_book"."author" FROM "smartlib_book" LIMIT 21
+2025-05-18 21:23:42.849 MSK [96155] ERROR:  column smartlib_book.author does not exist at character 55
+2025-05-18 21:23:42.849 MSK [96155] STATEMENT:  SELECT "smartlib_book"."id", "smartlib_book"."title", "smartlib_book"."author" FROM "smartlib_book" LIMIT 21
+2025-05-18 21:23:42.849 MSK [96155] ERROR:  column smartlib_book.author does not exist at character 55
+2025-05-18 21:23:42.849 MSK [96155] STATEMENT:  SELECT "smartlib_book"."id", "smartlib_book"."title", "smartlib_book"."author" FROM "smartlib_book" LIMIT 21
+2025-05-18 21:23:42.850 MSK [96155] ERROR:  column smartlib_book.author does not exist at character 55
+2025-05-18 21:23:42.850 MSK [96155] STATEMENT:  SELECT "smartlib_book"."id", "smartlib_book"."title", "smartlib_book"."author" FROM "smartlib_book" LIMIT 21
+2025-05-18 21:23:42.850 MSK [96155] ERROR:  column smartlib_book.author does not exist at character 55
+2025-05-18 21:23:42.850 MSK [96155] STATEMENT:  SELECT "smartlib_book"."id", "smartlib_book"."title", "smartlib_book"."author" FROM "smartlib_book" LIMIT 21
+2025-05-18 21:23:42.850 MSK [96155] ERROR:  column smartlib_book.author does not exist at character 55
+2025-05-18 21:23:42.850 MSK [96155] STATEMENT:  SELECT "smartlib_book"."id", "smartlib_book"."title", "smartlib_book"."author" FROM "smartlib_book" LIMIT 21
+2025-05-18 21:23:42.850 MSK [96155] ERROR:  column smartlib_book.author does not exist at character 55
+2025-05-18 21:23:42.850 MSK [96155] STATEMENT:  SELECT "smartlib_book"."id", "smartlib_book"."title", "smartlib_book"."author" FROM "smartlib_book" LIMIT 21
+2025-05-18 21:23:42.851 MSK [96155] ERROR:  column smartlib_book.author does not exist at character 55
+2025-05-18 21:23:42.851 MSK [96155] STATEMENT:  SELECT "smartlib_book"."id", "smartlib_book"."title", "smartlib_book"."author" FROM "smartlib_book" LIMIT 21
+2025-05-18 21:23:50.728 MSK [96444] ERROR:  column smartlib_book.author does not exist at character 55
+2025-05-18 21:23:50.728 MSK [96444] STATEMENT:  SELECT "smartlib_book"."id", "smartlib_book"."title", "smartlib_book"."author" FROM "smartlib_book"
+2025-05-18 21:23:50.775 MSK [96444] ERROR:  column smartlib_book.author does not exist at character 55
+2025-05-18 21:23:50.775 MSK [96444] STATEMENT:  SELECT "smartlib_book"."id", "smartlib_book"."title", "smartlib_book"."author" FROM "smartlib_book" LIMIT 21
+2025-05-18 21:23:50.775 MSK [96444] ERROR:  column smartlib_book.author does not exist at character 55
+2025-05-18 21:23:50.775 MSK [96444] STATEMENT:  SELECT "smartlib_book"."id", "smartlib_book"."title", "smartlib_book"."author" FROM "smartlib_book" LIMIT 21
+2025-05-18 21:23:50.776 MSK [96444] ERROR:  column smartlib_book.author does not exist at character 55
+2025-05-18 21:23:50.776 MSK [96444] STATEMENT:  SELECT "smartlib_book"."id", "smartlib_book"."title", "smartlib_book"."author" FROM "smartlib_book" LIMIT 21
+2025-05-18 21:23:50.777 MSK [96444] ERROR:  column smartlib_book.author does not exist at character 55
+2025-05-18 21:23:50.777 MSK [96444] STATEMENT:  SELECT "smartlib_book"."id", "smartlib_book"."title", "smartlib_book"."author" FROM "smartlib_book" LIMIT 21
+2025-05-18 21:23:50.777 MSK [96444] ERROR:  column smartlib_book.author does not exist at character 55
+2025-05-18 21:23:50.777 MSK [96444] STATEMENT:  SELECT "smartlib_book"."id", "smartlib_book"."title", "smartlib_book"."author" FROM "smartlib_book" LIMIT 21
+2025-05-18 21:23:50.778 MSK [96444] ERROR:  column smartlib_book.author does not exist at character 55
+2025-05-18 21:23:50.778 MSK [96444] STATEMENT:  SELECT "smartlib_book"."id", "smartlib_book"."title", "smartlib_book"."author" FROM "smartlib_book" LIMIT 21
+2025-05-18 21:23:50.778 MSK [96444] ERROR:  column smartlib_book.author does not exist at character 55
+2025-05-18 21:23:50.778 MSK [96444] STATEMENT:  SELECT "smartlib_book"."id", "smartlib_book"."title", "smartlib_book"."author" FROM "smartlib_book" LIMIT 21
+2025-05-18 21:23:50.780 MSK [96444] ERROR:  column smartlib_book.author does not exist at character 55
+2025-05-18 21:23:50.780 MSK [96444] STATEMENT:  SELECT "smartlib_book"."id", "smartlib_book"."title", "smartlib_book"."author" FROM "smartlib_book" LIMIT 21
+2025-05-18 21:23:50.782 MSK [96444] ERROR:  column smartlib_book.author does not exist at character 55
+2025-05-18 21:23:50.782 MSK [96444] STATEMENT:  SELECT "smartlib_book"."id", "smartlib_book"."title", "smartlib_book"."author" FROM "smartlib_book" LIMIT 21
+2025-05-18 21:23:50.782 MSK [96444] ERROR:  column smartlib_book.author does not exist at character 55
+2025-05-18 21:23:50.782 MSK [96444] STATEMENT:  SELECT "smartlib_book"."id", "smartlib_book"."title", "smartlib_book"."author" FROM "smartlib_book" LIMIT 21
+2025-05-18 21:23:50.783 MSK [96444] ERROR:  column smartlib_book.author does not exist at character 55
+2025-05-18 21:23:50.783 MSK [96444] STATEMENT:  SELECT "smartlib_book"."id", "smartlib_book"."title", "smartlib_book"."author" FROM "smartlib_book" LIMIT 21
+2025-05-18 21:23:50.783 MSK [96444] ERROR:  column smartlib_book.author does not exist at character 55
+2025-05-18 21:23:50.783 MSK [96444] STATEMENT:  SELECT "smartlib_book"."id", "smartlib_book"."title", "smartlib_book"."author" FROM "smartlib_book" LIMIT 21
+2025-05-18 21:23:50.783 MSK [96444] ERROR:  column smartlib_book.author does not exist at character 55
+2025-05-18 21:23:50.783 MSK [96444] STATEMENT:  SELECT "smartlib_book"."id", "smartlib_book"."title", "smartlib_book"."author" FROM "smartlib_book" LIMIT 21
+2025-05-18 21:23:50.784 MSK [96444] ERROR:  column smartlib_book.author does not exist at character 55
+2025-05-18 21:23:50.784 MSK [96444] STATEMENT:  SELECT "smartlib_book"."id", "smartlib_book"."title", "smartlib_book"."author" FROM "smartlib_book" LIMIT 21
+2025-05-18 21:24:47.829 MSK [98335] ERROR:  column smartlib_book.author does not exist at character 55
+2025-05-18 21:24:47.829 MSK [98335] STATEMENT:  SELECT "smartlib_book"."id", "smartlib_book"."title", "smartlib_book"."author" FROM "smartlib_book"
+2025-05-18 21:24:47.844 MSK [98335] ERROR:  column smartlib_book.author does not exist at character 55
+2025-05-18 21:24:47.844 MSK [98335] STATEMENT:  SELECT "smartlib_book"."id", "smartlib_book"."title", "smartlib_book"."author" FROM "smartlib_book" LIMIT 21
+2025-05-18 21:24:47.845 MSK [98335] ERROR:  column smartlib_book.author does not exist at character 55
+2025-05-18 21:24:47.845 MSK [98335] STATEMENT:  SELECT "smartlib_book"."id", "smartlib_book"."title", "smartlib_book"."author" FROM "smartlib_book" LIMIT 21
+2025-05-18 21:24:47.845 MSK [98335] ERROR:  column smartlib_book.author does not exist at character 55
+2025-05-18 21:24:47.845 MSK [98335] STATEMENT:  SELECT "smartlib_book"."id", "smartlib_book"."title", "smartlib_book"."author" FROM "smartlib_book" LIMIT 21
+2025-05-18 21:24:47.846 MSK [98335] ERROR:  column smartlib_book.author does not exist at character 55
+2025-05-18 21:24:47.846 MSK [98335] STATEMENT:  SELECT "smartlib_book"."id", "smartlib_book"."title", "smartlib_book"."author" FROM "smartlib_book" LIMIT 21
+2025-05-18 21:24:47.846 MSK [98335] ERROR:  column smartlib_book.author does not exist at character 55
+2025-05-18 21:24:47.846 MSK [98335] STATEMENT:  SELECT "smartlib_book"."id", "smartlib_book"."title", "smartlib_book"."author" FROM "smartlib_book" LIMIT 21
+2025-05-18 21:24:47.846 MSK [98335] ERROR:  column smartlib_book.author does not exist at character 55
+2025-05-18 21:24:47.846 MSK [98335] STATEMENT:  SELECT "smartlib_book"."id", "smartlib_book"."title", "smartlib_book"."author" FROM "smartlib_book" LIMIT 21
+2025-05-18 21:24:47.846 MSK [98335] ERROR:  column smartlib_book.author does not exist at character 55
+2025-05-18 21:24:47.846 MSK [98335] STATEMENT:  SELECT "smartlib_book"."id", "smartlib_book"."title", "smartlib_book"."author" FROM "smartlib_book" LIMIT 21
+2025-05-18 21:24:47.847 MSK [98335] ERROR:  column smartlib_book.author does not exist at character 55
+2025-05-18 21:24:47.847 MSK [98335] STATEMENT:  SELECT "smartlib_book"."id", "smartlib_book"."title", "smartlib_book"."author" FROM "smartlib_book" LIMIT 21
+2025-05-18 21:24:47.847 MSK [98335] ERROR:  column smartlib_book.author does not exist at character 55
+2025-05-18 21:24:47.847 MSK [98335] STATEMENT:  SELECT "smartlib_book"."id", "smartlib_book"."title", "smartlib_book"."author" FROM "smartlib_book" LIMIT 21
+2025-05-18 21:24:47.847 MSK [98335] ERROR:  column smartlib_book.author does not exist at character 55
+2025-05-18 21:24:47.847 MSK [98335] STATEMENT:  SELECT "smartlib_book"."id", "smartlib_book"."title", "smartlib_book"."author" FROM "smartlib_book" LIMIT 21
+2025-05-18 21:24:47.848 MSK [98335] ERROR:  column smartlib_book.author does not exist at character 55
+2025-05-18 21:24:47.848 MSK [98335] STATEMENT:  SELECT "smartlib_book"."id", "smartlib_book"."title", "smartlib_book"."author" FROM "smartlib_book" LIMIT 21
+2025-05-18 21:24:47.848 MSK [98335] ERROR:  column smartlib_book.author does not exist at character 55
+2025-05-18 21:24:47.848 MSK [98335] STATEMENT:  SELECT "smartlib_book"."id", "smartlib_book"."title", "smartlib_book"."author" FROM "smartlib_book" LIMIT 21
+2025-05-18 21:24:47.848 MSK [98335] ERROR:  column smartlib_book.author does not exist at character 55
+2025-05-18 21:24:47.848 MSK [98335] STATEMENT:  SELECT "smartlib_book"."id", "smartlib_book"."title", "smartlib_book"."author" FROM "smartlib_book" LIMIT 21
+2025-05-18 21:24:47.848 MSK [98335] ERROR:  column smartlib_book.author does not exist at character 55
+2025-05-18 21:24:47.848 MSK [98335] STATEMENT:  SELECT "smartlib_book"."id", "smartlib_book"."title", "smartlib_book"."author" FROM "smartlib_book" LIMIT 21
+2025-05-18 21:24:54.670 MSK [98619] ERROR:  column smartlib_book.author does not exist at character 55
+2025-05-18 21:24:54.670 MSK [98619] STATEMENT:  SELECT "smartlib_book"."id", "smartlib_book"."title", "smartlib_book"."author" FROM "smartlib_book"
+2025-05-18 21:24:54.680 MSK [98619] ERROR:  column smartlib_book.author does not exist at character 55
+2025-05-18 21:24:54.680 MSK [98619] STATEMENT:  SELECT "smartlib_book"."id", "smartlib_book"."title", "smartlib_book"."author" FROM "smartlib_book" LIMIT 21
+2025-05-18 21:24:54.680 MSK [98619] ERROR:  column smartlib_book.author does not exist at character 55
+2025-05-18 21:24:54.680 MSK [98619] STATEMENT:  SELECT "smartlib_book"."id", "smartlib_book"."title", "smartlib_book"."author" FROM "smartlib_book" LIMIT 21
+2025-05-18 21:24:54.681 MSK [98619] ERROR:  column smartlib_book.author does not exist at character 55
+2025-05-18 21:24:54.681 MSK [98619] STATEMENT:  SELECT "smartlib_book"."id", "smartlib_book"."title", "smartlib_book"."author" FROM "smartlib_book" LIMIT 21
+2025-05-18 21:24:54.681 MSK [98619] ERROR:  column smartlib_book.author does not exist at character 55
+2025-05-18 21:24:54.681 MSK [98619] STATEMENT:  SELECT "smartlib_book"."id", "smartlib_book"."title", "smartlib_book"."author" FROM "smartlib_book" LIMIT 21
+2025-05-18 21:24:54.681 MSK [98619] ERROR:  column smartlib_book.author does not exist at character 55
+2025-05-18 21:24:54.681 MSK [98619] STATEMENT:  SELECT "smartlib_book"."id", "smartlib_book"."title", "smartlib_book"."author" FROM "smartlib_book" LIMIT 21
+2025-05-18 21:24:54.682 MSK [98619] ERROR:  column smartlib_book.author does not exist at character 55
+2025-05-18 21:24:54.682 MSK [98619] STATEMENT:  SELECT "smartlib_book"."id", "smartlib_book"."title", "smartlib_book"."author" FROM "smartlib_book" LIMIT 21
+2025-05-18 21:24:54.682 MSK [98619] ERROR:  column smartlib_book.author does not exist at character 55
+2025-05-18 21:24:54.682 MSK [98619] STATEMENT:  SELECT "smartlib_book"."id", "smartlib_book"."title", "smartlib_book"."author" FROM "smartlib_book" LIMIT 21
+2025-05-18 21:24:54.682 MSK [98619] ERROR:  column smartlib_book.author does not exist at character 55
+2025-05-18 21:24:54.682 MSK [98619] STATEMENT:  SELECT "smartlib_book"."id", "smartlib_book"."title", "smartlib_book"."author" FROM "smartlib_book" LIMIT 21
+2025-05-18 21:24:54.683 MSK [98619] ERROR:  column smartlib_book.author does not exist at character 55
+2025-05-18 21:24:54.683 MSK [98619] STATEMENT:  SELECT "smartlib_book"."id", "smartlib_book"."title", "smartlib_book"."author" FROM "smartlib_book" LIMIT 21
+2025-05-18 21:24:54.683 MSK [98619] ERROR:  column smartlib_book.author does not exist at character 55
+2025-05-18 21:24:54.683 MSK [98619] STATEMENT:  SELECT "smartlib_book"."id", "smartlib_book"."title", "smartlib_book"."author" FROM "smartlib_book" LIMIT 21
+2025-05-18 21:24:54.683 MSK [98619] ERROR:  column smartlib_book.author does not exist at character 55
+2025-05-18 21:24:54.683 MSK [98619] STATEMENT:  SELECT "smartlib_book"."id", "smartlib_book"."title", "smartlib_book"."author" FROM "smartlib_book" LIMIT 21
+2025-05-18 21:24:54.684 MSK [98619] ERROR:  column smartlib_book.author does not exist at character 55
+2025-05-18 21:24:54.684 MSK [98619] STATEMENT:  SELECT "smartlib_book"."id", "smartlib_book"."title", "smartlib_book"."author" FROM "smartlib_book" LIMIT 21
+2025-05-18 21:24:54.684 MSK [98619] ERROR:  column smartlib_book.author does not exist at character 55
+2025-05-18 21:24:54.684 MSK [98619] STATEMENT:  SELECT "smartlib_book"."id", "smartlib_book"."title", "smartlib_book"."author" FROM "smartlib_book" LIMIT 21
+2025-05-18 21:24:54.684 MSK [98619] ERROR:  column smartlib_book.author does not exist at character 55
+2025-05-18 21:24:54.684 MSK [98619] STATEMENT:  SELECT "smartlib_book"."id", "smartlib_book"."title", "smartlib_book"."author" FROM "smartlib_book" LIMIT 21
+2025-05-18 21:29:48.196 MSK [9663] FATAL:  database "smartpass" does not exist
+2025-05-18 21:30:33.669 MSK [9888] ERROR:  syntax error at or near "CREATE" at character 6
+2025-05-18 21:30:33.669 MSK [9888] STATEMENT:  SHOW CREATE TABLE smartlib_note;
+2025-05-18 21:30:56.389 MSK [9888] ERROR:  syntax error at or near "CREATE" at character 6
+2025-05-18 21:30:56.389 MSK [9888] STATEMENT:  SHOW CREATE TABLE smartlib_note;
+2025-05-18 21:31:03.978 MSK [9888] ERROR:  syntax error at or near "CREATE" at character 6
+2025-05-18 21:31:03.978 MSK [9888] STATEMENT:  SHOW CREATE TABLE smartlib_note;
+2025-05-18 21:34:25.701 MSK [16542] ERROR:  cannot drop table smartlib_book because other objects depend on it
+2025-05-18 21:34:25.701 MSK [16542] DETAIL:  constraint smartlib_note_book_id_a1e3a3d2_fk_smartlib_book_id on table smartlib_note depends on table smartlib_book
+2025-05-18 21:34:25.701 MSK [16542] HINT:  Use DROP ... CASCADE to drop the dependent objects too.
+2025-05-18 21:34:25.701 MSK [16542] STATEMENT:  DROP TABLE smartlib_book;
+2025-05-18 21:42:57.589 MSK [34036] ERROR:  cannot drop the currently open database
+2025-05-18 21:42:57.589 MSK [34036] STATEMENT:  DROP DATABASE smartlib;
+2025-05-18 21:45:32.211 MSK [43982] FATAL:  database "smartpass" does not exist

@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% load form_filters %}
+
+{% block title %}Добавить заметку{% endblock %}
+
+{% block content %}
+<h1 class="mb-4">➕ Добавить новую заметку</h1>
+
+<form method="post" class="mb-3">
+    {% csrf_token %}
+    <div class="mb-3">
+        {{ form.title.label_tag }}
+        {{ form.title|add_class:"form-control" }}
+    </div>
+    <div class="mb-3">
+        {{ form.content.label_tag }}
+        {{ form.content|add_class:"form-control" }}
+    </div>
+
+    <button type="submit" class="btn btn-primary">Добавить</button>
+    <a href="{% url 'home' %}" class="btn btn-secondary">← Назад</a>
+</form>
+{% endblock %}

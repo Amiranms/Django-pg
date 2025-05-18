@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+
+{% block title %}Заметки к книге "{{ book.title }}"{% endblock %}
+
+{% block content %}
+<h1>Заметки к книге «{{ book.title }}»</h1>
+
+<h2>Существующие заметки</h2>
+{% if notes %}
+    <ul style="list-style:none; padding:0; margin-bottom:1em;">
+    {% for note in notes %}
+        <li style="border:1px solid #ccc; padding:10px; margin-bottom:8px; display:flex; justify-content:space-between; align-items:center;">
+            <div>
+                <strong>{{ note.title }}</strong><br>
+                {{ note.content|linebreaks }}
+            </div>
+        </li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>Заметок пока нет.</p>
+{% endif %}
+
+
+<form method="post" action="{% url 'add_note' book.id %}" class="mb-3">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit" class="btn btn-success">Добавить</button>
+    <a href="{% url 'home' %}" class="btn btn-secondary ms-2">← Назад</a>
+</form>
+{% endblock %}
+

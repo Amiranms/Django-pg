@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+{% block title %}Главная{% endblock %}
+
+{% block content %}
+<h1 class="mb-4">📚 Моя библиотека</h1>
+
+{% if books %}
+    <ul class="list-group mb-4">
+        {% for book in books %}
+            <li class="list-group-item">
+                <h5>{{ book.title }} <small class="text-muted">— {{ book.author }}</small></h5>
+                <p class="mb-1">{{ book.description }}</p>
+                <div>
+                    <a href="{% url 'book_notes' book.id %}" class="btn btn-sm btn-info">Заметки</a>
+                    <a href="{% url 'delete_book' book.id %}" class="btn btn-sm btn-danger">Удалить</a>
+                </div>
+            </li>
+        {% endfor %}
+    </ul>
+{% else %}
+    <p>Книг пока нет.</p>
+{% endif %}
+
+<a href="{% url 'add_book' %}" class="btn btn-primary">Добавить новую книгу</a>
+{% endblock %}
